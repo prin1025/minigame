@@ -107,7 +107,8 @@ public class Start extends JFrame {
 		for(i=0;i<30;i++) {
 		button[i] = new JButton(range);
 		}
-
+		label[52] = new JLabel("攻撃1:範囲1,威力2    攻撃2:範囲2,威力1");
+		contentPane.add(label[52]);
 
 		for(i=0;i<30;i++) {
 		label[i+21].setBounds(i%5*TILESIZE+ORIGIN, (i/5)*TILESIZE+ORIGIN, 47, 47);
@@ -134,6 +135,7 @@ public class Start extends JFrame {
 		label[18].setBounds(TILESIZE*2+ORIGIN+1,ORIGIN+1, 45, 45);
 		label[19].setBounds(TILESIZE*3+ORIGIN+1, TILESIZE+ORIGIN+1, 45, 45);
 		label[20].setBounds(TILESIZE*4+ORIGIN+1, ORIGIN+1, 45, 45);
+		label[52].setBounds(10, 350, 300, 45);
 		for(i=1;i<51;i++) {
 		contentPane.add(label[i]);
 		}
